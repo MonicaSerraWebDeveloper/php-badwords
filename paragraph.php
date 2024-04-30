@@ -11,5 +11,6 @@
 </head>
 <body>
     <p><?php echo $userParagraph ?></p>
+    <div>Numero di parole: <?php echo strlen($userParagraph) ?></div>
 </body>
 </html>
