@@ -1,5 +1,7 @@
 <?php
     $userParagraph = $_POST['paragraph'];
+    $lengthString = strlen($userParagraph);
+    $censuredWord = str_replace('pazzo', '***', $userParagraph);
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +12,11 @@
     <title>Paragraph</title>
 </head>
 <body>
+    <h2>Explicit content</h2>
     <p><?php echo $userParagraph ?></p>
-    <div>Numero di parole: <?php echo strlen($userParagraph) ?></div>
+    <div>Numero di parole: <?php echo $lengthString ?></div>
+
+    <h2>Censored</h2>
+    <p><?php echo $censuredWord ?></p>
 </body>
 </html>
