@@ -6,7 +6,7 @@
     <title>PHP badwords</title>
 </head>
 <body>
-    <form action="">
+    <form action="paragraph.php" method="POST">
         <textarea name="paragraph" id="" cols="50" rows="20"></textarea>
         <div>
             <button>Invia il paragrafo</button>
