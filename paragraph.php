@@ -2,6 +2,7 @@
     $userParagraph = $_POST['paragraph'];
     $lengthString = strlen($userParagraph);
     $censuredWord = str_replace('pazzo', '***', $userParagraph);
+    $censoredStringLength = strlen($censuredWord);
 ?>
 
 <!DOCTYPE html>
@@ -18,5 +19,6 @@
 
     <h2>Censored</h2>
     <p><?php echo $censuredWord ?></p>
+     <div>Numero di parole: <?php echo $censoredStringLength ?></div>
 </body>
 </html>
