@@ -1,7 +1,8 @@
 <?php
     $userParagraph = $_POST['paragraph'];
+    $wordForbidden = $_POST['word-forbidden'];
     $lengthString = strlen($userParagraph);
-    $censuredWord = str_replace('pazzo', '***', $userParagraph);
+    $censuredWord = str_replace($wordForbidden, '***', $userParagraph);
     $censoredStringLength = strlen($censuredWord);
 ?>
 

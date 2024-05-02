@@ -7,7 +7,14 @@
 </head>
 <body>
     <form action="paragraph.php" method="POST">
-        <textarea name="paragraph" id="" cols="50" rows="20"></textarea>
+        <div>
+            <label for="censured-word">Parola da censurare</label>
+            <input id="censured-word" type="text" name="word-forbidden">
+        </div>
+        <div>
+            <label for="text-area">Parola da censurare</label>
+            <textarea id="text-area" name="paragraph" cols="50" rows="20"></textarea>
+        </div>
         <div>
             <button>Invia il paragrafo</button>
         </div>
